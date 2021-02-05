@@ -1,21 +1,10 @@
+import 'package:budget_app/screens/categories/main.dart';
+import 'package:budget_app/screens/chart/main.dart';
+import 'package:budget_app/screens/item/main.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(Main());
-}
-
-class Main extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Expense Tracker',
-      home: Home(),
-      theme: ThemeData(
-        primaryColor: Colors.purple,
-        accentColor: Colors.orange,
-      ),
-    );
-  }
+  runApp(Home());
 }
 
 class Home extends StatefulWidget {
@@ -26,9 +15,16 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('hello'),
+    return MaterialApp(
+      title: 'Budgeterio',
+      home: Categories(),
+      routes: {
+        Items.route: (ctx) => Items(),
+        Chart.route: (ctx) => Chart(),
+      },
+      theme: ThemeData(
+        primaryColor: Colors.purple,
+        accentColor: Colors.orange,
       ),
     );
   }
