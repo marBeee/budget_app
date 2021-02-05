@@ -1,19 +1,35 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(BudgetApp());
+  runApp(Main());
 }
 
-class BudgetApp extends StatefulWidget {
-  @override
-  _BudgetAppState createState() => _BudgetAppState();
-}
-
-class _BudgetAppState extends State<BudgetApp> {
+class Main extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text("hello"),
+    return MaterialApp(
+      title: 'Expense Tracker',
+      home: Home(),
+      theme: ThemeData(
+        primaryColor: Colors.purple,
+        accentColor: Colors.orange,
+      ),
+    );
+  }
+}
+
+class Home extends StatefulWidget {
+  @override
+  _HomeState createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('hello'),
+      ),
     );
   }
 }
