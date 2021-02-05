@@ -1,6 +1,7 @@
-import 'package:budget_app/screens/categories/main.dart';
+import 'package:budget_app/screens/addEditCategory/main.dart';
 import 'package:budget_app/screens/chart/main.dart';
 import 'package:budget_app/screens/item/main.dart';
+import 'package:budget_app/screens/tabs/main.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,10 +18,11 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Budgeterio',
-      home: Categories(),
+      home: Tabs(),
       routes: {
         Items.route: (ctx) => Items(),
         Chart.route: (ctx) => Chart(),
+        AddEdit.route: (ctx) => AddEdit(),
       },
       theme: ThemeData(
         primaryColor: Colors.purple,
