@@ -9,6 +9,16 @@ class Items extends StatefulWidget {
 class _ItemsState extends State<Items> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back_ios_rounded),
+          onPressed: () => Navigator.of(context).pushReplacementNamed('/'),
+        ),
+      ),
+      body: Material(
+        child: Text('Category details'),
+      ),
+    );
   }
 }
