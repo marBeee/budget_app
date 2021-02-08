@@ -1,4 +1,5 @@
 import 'package:budget_app/screens/addEditCategory/main.dart';
+import 'package:budget_app/screens/categories/main.dart';
 import 'package:budget_app/screens/chart/main.dart';
 import 'package:budget_app/screens/item/main.dart';
 import 'package:budget_app/screens/tabs/main.dart';
@@ -23,6 +24,11 @@ class _HomeState extends State<Home> {
         Items.route: (ctx) => Items(),
         Chart.route: (ctx) => Chart(),
         AddEdit.route: (ctx) => AddEdit(),
+      },
+      onUnknownRoute: (settings) {
+        return MaterialPageRoute(
+          builder: (ctx) => Categories(),
+        );
       },
       theme: ThemeData(
         primaryColor: Colors.purple,

@@ -1,5 +1,5 @@
 import 'package:budget_app/models/category.dart';
-import 'package:budget_app/screens/categories/createTile.dart';
+import 'package:budget_app/screens/categories/catWidgets/createTile.dart';
 import 'package:budget_app/screens/categories/dummyData.dart';
 import 'package:flutter/material.dart';
 

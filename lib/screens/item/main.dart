@@ -13,7 +13,7 @@ class _ItemsState extends State<Items> {
       appBar: AppBar(
         leading: IconButton(
           icon: Icon(Icons.arrow_back_ios_rounded),
-          onPressed: () => Navigator.of(context).pushReplacementNamed('/'),
+          onPressed: () => Navigator.of(context).pushNamed('/'),
         ),
       ),
       body: Material(
