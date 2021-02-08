@@ -1,0 +1,81 @@
+import 'package:budget_app/models/item.dart';
+
+List<Item> dummyDataItem = [
+  Item(
+    itemId: 0,
+    catId: 0,
+    itemName: 'Piattos',
+    itemCost: 12,
+    datePurchased: DateTime.now(),
+  ),
+  Item(
+    itemId: 1,
+    catId: 1,
+    itemName: 'Couch',
+    itemCost: 12,
+    datePurchased: DateTime.now().subtract(Duration(days: 4)),
+  ),
+  Item(
+    itemId: 2,
+    catId: 2,
+    itemName: 'Lunch Money',
+    itemCost: 12,
+    datePurchased: DateTime.now(),
+  ),
+  Item(
+    itemId: 3,
+    catId: 0,
+    itemName: 'Chippy',
+    itemCost: 13,
+    datePurchased: DateTime.now().subtract(Duration(days: 1)),
+  ),
+  Item(
+    itemId: 4,
+    catId: 1,
+    itemName: 'Chair',
+    itemCost: 12,
+    datePurchased: DateTime.now().subtract(Duration(days: 5)),
+  ),
+  Item(
+    itemId: 5,
+    catId: 2,
+    itemName: 'Mapeh payment',
+    itemCost: 12,
+    datePurchased: DateTime.now().subtract(Duration(days: 2)),
+  ),
+  Item(
+    itemId: 6,
+    catId: 0,
+    itemName: 'Piattos',
+    itemCost: 14,
+    datePurchased: DateTime.now().subtract(Duration(days: 3)),
+  ),
+  Item(
+    itemId: 7,
+    catId: 1,
+    itemName: 'Table',
+    itemCost: 12,
+    datePurchased: DateTime.now().subtract(Duration(days: 7)),
+  ),
+  Item(
+    itemId: 8,
+    catId: 2,
+    itemName: 'Flute',
+    itemCost: 12,
+    datePurchased: DateTime.now().subtract(Duration(days: 3)),
+  ),
+  Item(
+    itemId: 9,
+    catId: 0,
+    itemName: 'Piattos',
+    itemCost: 15,
+    datePurchased: DateTime.now().subtract(Duration(days: 4)),
+  ),
+  Item(
+    itemId: 10,
+    catId: 1,
+    itemName: 'Figurine',
+    itemCost: 12,
+    datePurchased: DateTime.now().subtract(Duration(days: 8)),
+  ),
+];
