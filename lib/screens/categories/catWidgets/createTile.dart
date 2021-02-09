@@ -11,18 +11,17 @@ class CategoryTile extends StatelessWidget {
     return ListTile(
       title: Text(cats.name),
       subtitle: _bar(cats.maxAmount, cats.spentAmount),
-      onTap: () => Navigator.of(context).pushReplacementNamed(Items.route),
+      onTap: () => Navigator.of(context).pushNamed(Items.route),
       trailing: IconButton(
         icon: Icon(Icons.edit_outlined),
-        onPressed: () =>
-            Navigator.of(context).pushReplacementNamed(AddEdit.route),
+        onPressed: () => Navigator.of(context).pushNamed(AddEdit.route),
       ),
     );
   }
 }
 
 Widget _bar(double max, double spent) {
-  double percent = 100;
+  double percent = (spent / max) * 100;
   double len = (spent / max) * 200;
   return Row(
     mainAxisAlignment: MainAxisAlignment.spaceBetween,
