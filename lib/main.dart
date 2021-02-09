@@ -4,6 +4,7 @@ import 'package:budget_app/screens/chart/main.dart';
 import 'package:budget_app/screens/item/main.dart';
 import 'package:budget_app/screens/tabs/main.dart';
 import 'package:flutter/material.dart';
+import 'models/item.dart';
 
 void main() {
   runApp(Home());
