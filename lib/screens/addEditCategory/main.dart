@@ -4,9 +4,11 @@ import 'package:intl/intl.dart';
 
 class AddEdit extends StatelessWidget {
   static const route = 'addEdit';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(        
       title: Text("Expense"),
       centerTitle: true,

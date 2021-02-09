@@ -22,8 +22,7 @@ class _TabsState extends State<Tabs> {
       child: Scaffold(
         body: _screen[selectedIndex],
         floatingActionButton: FloatingActionButton(
-          onPressed: () =>
-              Navigator.of(context).pushReplacementNamed(AddEdit.route),
+          onPressed: () => Navigator.of(context).pushNamed(AddEdit.route),
           child: Icon(Icons.add),
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
